@@ -1,0 +1,20 @@
+head
+	link(rel="stylesheet", href="/styles/login.css")
+body 
+	if errors
+		each error in errors
+			.alert.alert-danger= error	
+ 
+	form(action="/auth/login", method="POST")
+		img(src="https://graph.facebook.com/100004203523913/picture?type=large",alt="img")
+		h2 Welcome
+		div(class="input-group")
+			input(type="text",name="email",required,value=values ? values.email : '')
+			label(for="email") Username		
+		div(class="input-group")
+			input(type="password",name="password",required,value=values ? values.password : '')
+			label(for="password") Password		
+		button(class="submit") Login
+		p Dont have account?
+			a(href="/404NotFound") Sign Up
+	

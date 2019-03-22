@@ -1,0 +1,38 @@
+.my-card {
+	height: 26rem;
+	width: 16rem;
+	border-radius: 0.5rem;
+	box-shadow: 1px 2px 3px #DDD; 
+}
+
+.my-card img {
+	width: 100%;
+	height: 10rem;
+	border-radius: 0.5rem 0.5rem 0 0;
+	background-image: url('https://loremflickr.com/320/240');
+}
+
+.my-card h3 {
+	padding:0.2rem 0.8rem;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+.my-card p {
+	padding:0.2rem 0.8rem;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+
+.my-card button {
+	width: 6rem;
+	height: 2rem;
+	margin-top:0.7rem;
+	margin-left:1rem;
+	border: none;
+	border-radius: 0.3rem;
+	background-color: #0069D9;
+	color: white;
+	font-family: "Roboto", sans-serif;
+}

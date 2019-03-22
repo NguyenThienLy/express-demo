@@ -1,0 +1,26 @@
+html
+	head
+		link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+	body
+		nav.navbar.navbar-expand-lg.navbar-light.bg-primary
+			if user
+				a.navbar-brand(href='#')= user.name
+			button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarNav.collapse.navbar-collapse
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href='/users') Home
+					li.nav-item
+						a.nav-link(href='/users/create') Create
+					li.nav-item
+						a.nav-link(href='/products/') Products
+					li.nav-item
+						a.nav-link(href='/') Logout
+					li.nav-item
+						a.nav-link(href='/') cart
+					li.nav-item
+						a.nav-link(href='/')= count		
+
+		.container.pt-5
+			block content

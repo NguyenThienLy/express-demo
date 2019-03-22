@@ -1,0 +1,23 @@
+extends ../layouts/common
+
+block content
+	h1 Create products
+
+	if errors
+		each error in errors
+			.alert.alert-danger= error
+
+	form(action="/products/create", method="POST")
+		.form-group
+			label(for="name") Name
+			input#name.form-control(name="name", type="text", value=values ? values.name : '')
+
+		.form-group
+			label(for="decripton") Decription
+			input#decription.form-control(name="decripton", type="text", value=values ? values.decripton : '')
+
+		.form-group
+			label(for="avatar") Avatar
+			input#avatar.form-control-file(name="avatar", type="file")
+
+		button.btn.btn-primary Create

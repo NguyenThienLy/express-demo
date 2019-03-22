@@ -1,0 +1,111 @@
+body {
+	background-color: #F5F5F5;
+	color: #33333;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: url('https://images.pexels.com/photos/775033/pexels-photo-775033.jpeg?cs=srgb&dl=berry-beverage-delicious-775033.jpg&fm=jpg');
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;    
+}
+
+.input-group {
+	margin: 2rem 0;
+	position: relative;
+}
+
+form {
+	height: 30rem;
+	width: 18rem;
+	background-color: white;
+	padding: 2rem 1.2rem;
+	box-shadow: .4px 4px 12px rgba(0,0,0,.2);
+	border-radius: 1rem;
+	text-shadow: .4px .4px 5px rgba(0,0,0,.2);
+	opacity: 0.9;
+	position: relative;
+	box-sizing: border-box;
+}
+
+form img {
+	width: 7rem;
+	height: 7rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+	border: 2px solid #FBB0B0;
+	
+}
+
+form h2 {
+	font-size: 3rem;
+	font-weight: 400;
+	text-align: center;
+	user-select: none;	
+}
+
+form input {
+	width: 85%;
+	display: block;
+	margin: 2.4rem auto;
+	font-size: 1.2rem;
+	border: none;
+	border-bottom: 1px solid dodgerblue;
+	outline: none;
+	padding: 6px 4px;
+}
+
+form label {
+	position: absolute;
+	left: 1rem;
+	top: 0rem;
+	font-weight: 300;
+	font-size: 1.2rem;
+	pointer-events: none;
+	color: gray;
+	transition: 200ms ease;
+}
+
+input:focus + label, input:valid + label {
+	left: 1rem;
+	top: -1.2rem;
+	font-size: 1rem;
+	color: dodgerblue;
+}
+
+form .submit {
+	background-color: dodgerblue;
+	padding: .8rem 1rem;
+	border: none;
+	color: white;
+	border-radius: 2rem;
+	width: 100%;
+	font-size: 1.5rem;
+	font-weight: 400;
+	cursor: pointer;
+	transform: 200ms;
+	background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+	outline: none;
+	transition: 300ms;
+}
+
+form .submit:hover {
+	padding: 1rem 1.2rem;
+}
+
+form p {
+	text-align: center;
+	font-size: 1rem;
+	font-weight: 300;
+	margin-top: 1.2rem;
+	color: #BBBBBB;
+}
+
+form p a {
+	color: gray;
+}
